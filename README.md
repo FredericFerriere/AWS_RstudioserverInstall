@@ -12,8 +12,8 @@ SSH into EC2 instance
 Step 1: 
 $ sudo yum update -y
 
-Step 2: installing R 
-[DEPRECATED] sudo yum install R 
+Step 2: installing R  
+[DEPRECATED] sudo yum install R  
 $ sudo amazon-linux-extras install R3.4
 
 Step 3: download and install rstudio server 
