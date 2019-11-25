@@ -16,32 +16,32 @@ Step 2: installing R
 [DEPRECATED] sudo yum install R  
 $ sudo amazon-linux-extras install R3.4
 
-Step 3: download and install rstudio server 
-$ wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5019-x86_64.rpm
+Step 3: download and install rstudio server  
+$ wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5019-x86_64.rpm  
 $ sudo yum install rstudio-server-rhel-1.2.5019-x86_64.rpm
 
-Step 4: (optional) checking installation worked
+Step 4: (optional) checking installation worked  
 $ sudo rstudio-server verify-installation
 
-Step 5: creating a user
-$ sudo useradd testUser
+Step 5: creating a user  
+$ sudo useradd testUser  
 $ echo testUser:testPassword | sudo chpasswd
 
 
-## SCRIPT INSTALLATION (to be copied for EC2 instance launch)
-#!/bin/bash
-sudo yum update -y
-sudo amazon-linux-extras install R3.4 -y
-wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5019-x86_64.rpm
-sudo yum install rstudio-server-rhel-1.2.5019-x86_64.rpm -y
-sudo useradd testUser
-echo testUser:testPassword | sudo chpasswd
+## SCRIPT INSTALLATION (to be copied for EC2 instance launch)  
+#!/bin/bash  
+sudo yum update -y  
+sudo amazon-linux-extras install R3.4 -y  
+wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5019-x86_64.rpm  
+sudo yum install rstudio-server-rhel-1.2.5019-x86_64.rpm -y  
+sudo useradd testUser  
+echo testUser:testPassword | sudo chpasswd  
 
 
-## Testing in a browser
-Connecting via the browser:
+## Testing in a browser  
+Connecting via the browser:  
 <publicIP>:8787
 
-user: testUser
+user: testUser  
 password: testPassword
 
