@@ -41,5 +41,5 @@ sudo yum install rstudio-server-rhel-1.2.5019-x86_64.rpm -y
 sudo useradd testUser
 echo testUser:testPassword | sudo chpasswd
 
--------------------------
+------------------------
 
