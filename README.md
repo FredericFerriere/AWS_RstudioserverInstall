@@ -1,8 +1,6 @@
 # AWS_RstudioserverInstall
 Steps to install rstudio server on AWS Linux, including script on EC2 launch
 
-##Installing Rstudio server on AWS Linux
-
 Requirements: allow custom TCP on Port 8787 of the relevant security group
 
 ------------------------
