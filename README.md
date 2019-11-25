@@ -9,7 +9,7 @@ Requirements: allow custom TCP on Port 8787 of the relevant security group
 On Ubuntu 
 SSH into EC2 instance
 
-Step 1: 
+Step 1:  
 $ sudo yum update -y
 
 Step 2: installing R  
@@ -40,7 +40,7 @@ echo testUser:testPassword | sudo chpasswd
 
 ## Testing in a browser  
 Connecting via the browser:  
-<publicIP>:8787
+publicIP:8787
 
 user: testUser  
 password: testPassword
